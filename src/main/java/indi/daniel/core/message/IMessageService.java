@@ -1,4 +1,4 @@
-package indi.daniel.spdm.xmlaop.demo.message;
+package indi.daniel.core.message;
 
 import java.util.List;
 

@@ -1,7 +1,6 @@
-package indi.daniel.spdm.xmlbean.demo.beans;
+package indi.daniel.stageapp.beans;
 
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 

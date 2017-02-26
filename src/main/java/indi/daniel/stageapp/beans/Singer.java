@@ -1,4 +1,4 @@
-package indi.daniel.spdm.xmlbean.demo.beans;
+package indi.daniel.stageapp.beans;
 
 /**
  * Created by daniel on 2017/2/25.

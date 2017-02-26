@@ -1,1 +1,0 @@
-Depend on xmlbean demo.

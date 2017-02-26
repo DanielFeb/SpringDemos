@@ -1,8 +1,8 @@
-package indi.daniel.spdm.xmlaop.demo.message;
+package indi.daniel.core.message;
 
 import java.util.ArrayList;
 import java.util.List;
-import static indi.daniel.spdm.xmlaop.demo.message.IMessage.MessageSeverity;
+import static indi.daniel.core.message.IMessage.MessageSeverity;
 
 /**
  * Created by daniel on 2017/2/25.

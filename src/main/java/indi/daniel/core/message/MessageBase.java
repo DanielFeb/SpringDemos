@@ -1,4 +1,4 @@
-package indi.daniel.spdm.xmlaop.demo.message;
+package indi.daniel.core.message;
 
 /**
  * Created by daniel on 2017/2/25.

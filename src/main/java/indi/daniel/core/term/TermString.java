@@ -1,4 +1,4 @@
-package indi.daniel.spdm.xmlaop.demo.term;
+package indi.daniel.core.term;
 
 /**
  * Created by daniel on 2017/2/25.
