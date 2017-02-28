@@ -5,10 +5,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
     <beans>
         <!-- inject by constructor or property: value/ref -->
-        <bean id="singerLee" class="indi.daniel.stageapp.beans.Singer">
+        <bean id="singerLee" class="indi.daniel.xmlstage.beans.Singer">
             <property name="name" value="Lee"/>
         </bean>
-        <bean id="songProgramme" class="indi.daniel.stageapp.beans.SongProgramme">
+        <bean id="songProgramme" class="indi.daniel.xmlstage.beans.SongProgramme">
             <property name="songName" value="Small Bird"/>
             <constructor-arg name="performer" ref="singerLee"/>
         </bean>
@@ -16,9 +16,9 @@
 
         <!-- inject by P namespace value/ref -->
         <!-- inject by SpEL -->
-        <bean id="dancerXu" class="indi.daniel.stageapp.beans.Dancer"
+        <bean id="dancerXu" class="indi.daniel.xmlstage.beans.Dancer"
         p:name="Xu"/>
-        <bean id="danceProgramme" class="indi.daniel.stageapp.beans.DanceProgramme"
+        <bean id="danceProgramme" class="indi.daniel.xmlstage.beans.DanceProgramme"
         p:performer-ref="dancerXu" p:danceName="#{'Swan'}" />
 
     </beans>

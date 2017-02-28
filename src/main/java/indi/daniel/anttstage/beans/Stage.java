@@ -1,4 +1,4 @@
-package indi.daniel.stageapp.beans;
+package indi.daniel.anttstage.beans;
 
 
 import java.util.Iterator;

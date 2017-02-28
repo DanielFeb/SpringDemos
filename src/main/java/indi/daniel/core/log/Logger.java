@@ -7,4 +7,8 @@ public class Logger {
     public void logBeforeMethod(){
         System.out.println("Logger before method!");
     }
+    public void logAfterMethod(){
+        System.out.println("Logger before method!");
+    }
+
 }

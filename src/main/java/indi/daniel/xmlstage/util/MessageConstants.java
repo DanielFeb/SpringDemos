@@ -1,4 +1,4 @@
-package indi.daniel.stageapp.util;
+package indi.daniel.xmlstage.util;
 
 /**
  * Created by daniel on 2017/2/26.

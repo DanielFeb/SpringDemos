@@ -1,15 +1,15 @@
-package indi.daniel.stageapp;
+package indi.daniel.xmlstage;
 
-import indi.daniel.stageapp.beans.Stage;
+import indi.daniel.xmlstage.beans.Stage;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Created by daniel on 2017/2/25.
  */
-public class StageApp {
+public class XmlStage {
     public static void main(String[] args){
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("config/StageContext.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("config/xmlstage/StageContext.xml");
 
 //        IPerformer performer = (IPerformer) applicationContext.getBean("singerLee");
 //        System.out.println(performer.getName());

@@ -7,7 +7,7 @@
     <beans default-autowire="byType">
         <import resource="ProgrammesContext.xml"/>
         <!-- inject Collection type -->
-        <bean id="stage" class="indi.daniel.stageapp.beans.Stage" autowire="byType">
+        <bean id="stage" class="indi.daniel.xmlstage.beans.Stage" autowire="byType">
             <!--<property name="light"/>-->
             <property name="programmeList">
                 <list>
@@ -16,11 +16,11 @@
                 </list>
             </property>
         </bean>
-        <bean name="light" class="indi.daniel.stageapp.beans.Light"/>
+        <bean name="light" class="indi.daniel.xmlstage.beans.Light"/>
 
 
         <aop:config>
-            <aop:pointcut id="pragrammeStart" expression="execution(* indi.daniel.stageapp.beans.*.start(..))"/>
+            <aop:pointcut id="pragrammeStart" expression="execution(* indi.daniel.xmlstage.beans.*.start(..))"/>
             <aop:aspect ref="light">
                 <aop:before method="lightOn" pointcut-ref="pragrammeStart"/>
                 <aop:after method="lightOff" pointcut-ref="pragrammeStart"/>
