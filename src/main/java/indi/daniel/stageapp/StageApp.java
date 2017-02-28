@@ -7,9 +7,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  * Created by daniel on 2017/2/25.
  */
-public class XmlBeanApp {
+public class StageApp {
     public static void main(String[] args){
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("StageContext.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("config/StageContext.xml");
 
 //        IPerformer performer = (IPerformer) applicationContext.getBean("singerLee");
 //        System.out.println(performer.getName());

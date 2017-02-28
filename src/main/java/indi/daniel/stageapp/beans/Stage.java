@@ -9,6 +9,15 @@ import java.util.List;
  */
 public class Stage {
     private List<IProgramme> programmeList;
+    private Light light;
+
+    public Light getLight() {
+        return light;
+    }
+
+    public void setLight(Light light) {
+        this.light = light;
+    }
 
     public List<IProgramme> getProgrammeList() {
         return programmeList;
@@ -19,6 +28,12 @@ public class Stage {
     }
 
     public void startShows(){
+
+        if(light != null){
+            light.lightPreparation();
+        }else{
+            System.out.println("no light!");
+        }
         Iterator<IProgramme> iterator = programmeList.iterator();
         while (iterator.hasNext()){
             iterator.next().start();

@@ -7,10 +7,6 @@ public class Singer implements IPerformer {
 
     private String name;
 
-    public Singer(String name) {
-        this.name = name;
-    }
-
     public String getName() {
         return name;
     }

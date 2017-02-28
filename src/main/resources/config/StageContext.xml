@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <beans default-autowire="byType">
+        <import resource="ProgrammesContext.xml"/>
+        <!-- inject Collection type -->
+        <bean id="stage" class="indi.daniel.stageapp.beans.Stage" autowire="byType">
+            <!--<property name="light"/>-->
+            <property name="programmeList">
+                <list>
+                    <ref bean="songProgramme"/>
+                    <ref bean="danceProgramme"/>
+                </list>
+            </property>
+        </bean>
+        <bean name="light" class="indi.daniel.stageapp.beans.Light"/>
+
+
+        <aop:config>
+            <aop:pointcut id="pragrammeStart" expression="execution(* indi.daniel.stageapp.beans.*.start(..))"/>
+            <aop:aspect ref="light">
+                <aop:before method="lightOn" pointcut-ref="pragrammeStart"/>
+                <aop:after method="lightOff" pointcut-ref="pragrammeStart"/>
+            </aop:aspect>
+        </aop:config>
+
+    </beans>
+
+
+</beans>
